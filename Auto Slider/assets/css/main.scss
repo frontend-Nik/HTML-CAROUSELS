@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  .title{
+    font-size: 40px;
+  }
+  #slider {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    .slick-dots {
+      background-color: #0005;
+      backdrop-filter: blur(5);
+      bottom: 0px;
+      padding: 0.5rem 0;
+    }
+  }
+}
+.slick-dots li button:before {
+  color: #fff;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #fffdfd;
+}
+.slide-item {
+  img {
+    width: 100%;
+  }
+}
